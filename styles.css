@@ -18,6 +18,7 @@ body {
     flex-wrap: wrap;
     border: 1px solid black;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 #grid-button {
@@ -40,3 +41,97 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+#btn-grid:hover {
+    background-color: #B2A74B; 
+}
+
+#color-sections {
+    padding: 30px;
+}
+
+#color-selections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+#Red {
+    background-color: #e63946; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#Red:hover {
+    background-color: #cc2c3a;
+    
+}
+
+#Blue {
+    background-color: #457b9d; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#Blue:hover {
+    background-color: #356a86; 
+}
+
+#Green {
+    background-color: #2a9d8f; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#Green:hover {
+    background-color: #21867d; 
+    
+}
+
+#Yellow {
+    background-color: #f4a261; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#Yellow:hover {
+    background-color: #e88f48;
+}
+
+#Reset {
+    background-color: #6d6875; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+#Reset:hover {
+    background-color: #5b545e;
+   
+}
+
