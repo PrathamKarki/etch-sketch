@@ -31,15 +31,16 @@ body {
 
 }
 
-#btn-grid {
+#btn-grid ,#Red, #Blue, #Green, #Yellow, #Reset {
     background-color: #DACB3E;
     color: #ffffff;
-    padding: 10px 20px; 
+    padding: 15px 30px; 
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; 
     margin: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px; 
+    transition: background-color 0.3s, transform 0.2s; 
 }
 #btn-grid:hover {
     background-color: #B2A74B; 
@@ -57,79 +58,24 @@ body {
     margin: 0 auto;
 }
 
-#Red {
-    background-color: #e63946; 
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 #Red:hover {
-    background-color: #cc2c3a;
-    
-}
-
-#Blue {
-    background-color: #457b9d; 
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    
+    background-color: #cc2c3a; 
 }
 
 #Blue:hover {
     background-color: #356a86; 
 }
 
-#Green {
-    background-color: #2a9d8f; 
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    
-}
-
 #Green:hover {
-    background-color: #21867d; 
-    
-}
-
-#Yellow {
-    background-color: #f4a261; 
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    
+    background-color: #21867d;    
 }
 
 #Yellow:hover {
     background-color: #e88f48;
 }
 
-#Reset {
-    background-color: #6d6875; 
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-   
-}
 #Reset:hover {
-    background-color: #5b545e;
-   
+    background-color: #5b545e; 
 }
 
