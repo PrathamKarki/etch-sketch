@@ -1,0 +1,42 @@
+#title {
+    text-align: center;
+    padding: 30px;
+    color: #7A1CAC;
+    text-transform: uppercase;
+
+}
+body {
+    background-color: #E3D3F4;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    height: 960px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+#grid-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+#btn-grid {
+    background-color: #DACB3E;
+    color: #ffffff;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
