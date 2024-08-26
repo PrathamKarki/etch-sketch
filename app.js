@@ -18,3 +18,22 @@ const generateGridCells =(gridCellsCount) =>{
     }
 }
 generateGridCells(16);
+
+/* button to change grid sizes inside container */
+const gridButton = document.querySelector('#btn-grid');
+
+gridButton.addEventListener('click',()=>{
+
+    let popUp = prompt("Enter the number of squares per side for grid (maximum upto 100)");
+
+    if(isNaN(popUp)|| popUp < 1 || popUp > 100 )
+    {
+    alert("Invalid  choice ! choose choose between 2 - 100");
+    }
+
+    else {
+     container.innerHTML = '';
+    generateGridCells(popUp);
+    }
+})
+
