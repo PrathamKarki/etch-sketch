@@ -14,8 +14,11 @@ const generateGridCells =(gridCellsCount) =>{
         squareDivs.style.boxSizing ="border-box";
         squareDivs.style.flexShrink = '0';
         squareDivs.style.flexBasis = `${intialGridSize/gridCellsCount}px`;
+        squareDivs.setAttribute('class','small-squares');
         container.appendChild(squareDivs);
+        
     }
+    toogleHovering();
 }
 generateGridCells(16);
 
@@ -37,3 +40,49 @@ gridButton.addEventListener('click',()=>{
     }
 })
 
+/* hovering effect for the grid boxes */
+const red = document.querySelector("#Red");
+const blue = document.querySelector("#Blue");
+const green = document.querySelector("#Green");
+const yellow = document.querySelector("#Yellow");
+const reset = document.querySelector("#Reset");
+
+
+function toogleHovering  () {
+    const smallSquare = document.querySelectorAll('.small-squares')
+    smallSquare.forEach(squares => {
+        squares.addEventListener('mouseover',(e)=>{
+            e.target.style.backgroundColor = `${intialColor}`;
+        });
+        
+    });
+}
+toogleHovering();
+
+red.addEventListener("click",(e)=>{
+    intialColor = 'red';
+    
+})
+
+blue.addEventListener("click",(e)=>{
+    intialColor = 'blue';
+    
+})
+
+
+green.addEventListener("click",(e)=>{
+    intialColor = 'green';
+    
+})
+
+yellow.addEventListener("click",(e)=>{
+    intialColor = 'yellow';
+    
+})
+
+/* resetting the grid */
+
+reset.addEventListener('click',()=>{
+    container.innerHTML = '';
+    generateGridCells(16);
+})
